@@ -73,9 +73,6 @@ ArrayInfo createArray(){
         }
     }
 
-    printf("Original Array: ");
-    printArray(arrLen, array);
-
     ArrayInfo arr;
     arr.array = array;
     arr.size = arrLen;

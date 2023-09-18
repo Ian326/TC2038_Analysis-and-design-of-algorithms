@@ -20,9 +20,7 @@ int main(){
         int *arr = arrStruct.array;
         int arrLen = arrStruct.size;
 
-        printf("Size of array: %i\n\n", arrLen);
-
-        printf("Please choose one option:\n");
+        printf("\nPlease choose one option:\n");
         printf("1. Bubble Sort\n"
                "2. Merge Sort\n"
                "3. Quick Sort\n"
@@ -33,14 +31,22 @@ int main(){
     
         if (isInt(str)){
             int opt = stoi(str);
+
+            printf("\nOriginal Array: ");
+            printArray(arrLen, arr);
+
             switch (opt)
             {
             case 1:
                 BubbleSort(arrLen, arr);
+                printf("[BubbleSort] Ordered Array: ");
+                printArray(arrLen, arr);
                 menu = 0;
                 break;
             case 2:
-                MergeSort(0, 0);
+                MergeSort(0, arrLen - 1, arr, arrLen);
+                printf("[MergeSort] Ordered Array: ");
+                printArray(arrLen, arr);
                 menu = 0;
                 break;
             case 3:

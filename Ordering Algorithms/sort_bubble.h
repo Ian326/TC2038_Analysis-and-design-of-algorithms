@@ -3,8 +3,8 @@
 using namespace std;
 
 void BubbleSort(int n, int array[]){
-    int i, j;
 
+    int i, j;
     bool swapped;
 
     for(i = 0; i < n - 1; i++){
@@ -21,9 +21,5 @@ void BubbleSort(int n, int array[]){
         if (not swapped){
             break;
         }
-    
     }
-
-    printf("\n[BubbleSort] Ordered Array: ");
-    printArray(n, array);
 };
