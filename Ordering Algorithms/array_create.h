@@ -59,7 +59,7 @@ ArrayInfo createArray(){
 
         while(not valid_value){
 
-            printf("Give me the %i value of the array: ", i);
+            printf("Give me the %i element of the array: ", i);
             cin >> str;
             if (isInt(str))
             {
