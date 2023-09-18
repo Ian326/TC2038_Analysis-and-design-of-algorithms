@@ -16,5 +16,5 @@ void printArray(int n, int *array){
     }
 
     arr += "]";
-    cout << arr << endl;
+    printf("%s\n", arr.c_str());
 }
