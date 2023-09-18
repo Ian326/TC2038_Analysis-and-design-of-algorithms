@@ -14,11 +14,8 @@ int main(){
     
     while(menu){
 
-        printf("\nWelcome to the Ordering Algorithms Program. First you'll create your array.\n\n");
-
-        ArrayInfo arrStruct = createArray();
-        int *arr = arrStruct.array;
-        int arrLen = arrStruct.size;
+        printf("\n======================================================");
+        printf("\nWelcome to the Ordering Algorithms Program.\n");
 
         printf("\nPlease choose one option:\n");
         printf("1. Bubble Sort\n"
@@ -26,14 +23,24 @@ int main(){
                "3. Quick Sort\n"
                "4. Counting Sort\n"
                "5. Exit\n");
+        
         string str;
         cin >> str;
     
         if (isInt(str)){
             int opt = stoi(str);
+            int *arr;
+            int arrLen;
+            
+            if (opt >= 1 && opt <= 5)
+            {
+                ArrayInfo arrStruct = createArray();
+                arr = arrStruct.array;
+                arrLen = arrStruct.size;
 
-            printf("\nOriginal Array: ");
-            printArray(arrLen, arr);
+                printf("\nOriginal Array: ");
+                printArray(arrLen, arr);
+            }
 
             switch (opt)
             {
@@ -61,11 +68,11 @@ int main(){
                 menu = 0;
                 break;
             default:
-                printf("Invalid Option. Try again.\n");
+                printf("\nInvalid Option. Try again.\n");
             }
         }
         else{
-            printf("Invalid Option. Try again.\n");
+            printf("\nInvalid Option. Try again.\n");
         }
     }
 
