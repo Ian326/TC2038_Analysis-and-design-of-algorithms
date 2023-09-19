@@ -63,7 +63,9 @@ int main(){
                 menu = 0;
                 break;
             case 4:
-                CountingSort(0, 0);
+                CountingSort(arrLen, arr);
+                printf("[CountingSort] Ordered Array: ");
+                printArray(arrLen, arr);
                 menu = 0;
                 break;
             case 5:
