@@ -3,7 +3,7 @@
 using namespace std;
 
 // Función para ordenar los números
-void CountingSort(int &size, int arr[])
+void CountingSort(int size, int arr[])
 {
     // 1. Encontrar el valor máximo y mínimo en arr[]
 
