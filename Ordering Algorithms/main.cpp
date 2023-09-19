@@ -38,7 +38,7 @@ int main(){
                 arr = arrStruct.array;
                 arrLen = arrStruct.size;
 
-                printf("\nOriginal Array: ");
+                printf("\n\nOriginal Array: ");
                 printArray(arrLen, arr);
             }
 
