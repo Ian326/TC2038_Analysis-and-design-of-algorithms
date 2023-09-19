@@ -51,7 +51,8 @@ ArrayInfo createArray(){
     }
 
     int *array = new int[arrLen];
-
+    
+    printf("Give me the elements of the array: ");
     for (int i = 0; i < arrLen; i++)
     {
         int value;
@@ -59,16 +60,11 @@ ArrayInfo createArray(){
 
         while(not valid_value){
 
-            printf("Give me the %i element of the array: ", i);
             cin >> str;
             if (isInt(str))
             {
                 array[i] = stoi(str);
                 valid_value = true;
-            }
-            else
-            {
-                printf("Not a number, try again.\n\n");
             }
         }
     }
