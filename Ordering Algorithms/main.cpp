@@ -57,7 +57,9 @@ int main(){
                 menu = 0;
                 break;
             case 3:
-                QuickSort(0, 0);
+                QuickSort(0, arrLen - 1, arr);
+                printf("[QuickSort] Ordered Array: ");
+                printArray(arrLen, arr);
                 menu = 0;
                 break;
             case 4:
