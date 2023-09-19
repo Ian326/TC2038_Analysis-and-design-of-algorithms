@@ -51,7 +51,7 @@ int main(){
                 menu = 0;
                 break;
             case 2:
-                MergeSort(0, arrLen - 1, arr, arrLen);
+                MergeSort(0, arrLen - 1, arr);
                 printf("[MergeSort] Ordered Array: ");
                 printArray(arrLen, arr);
                 menu = 0;

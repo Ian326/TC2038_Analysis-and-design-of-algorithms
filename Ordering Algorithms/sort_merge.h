@@ -49,14 +49,14 @@ void merge(int leftMostIdx, int mediumIdx, int rightMostIdx, int array[]){
     }
 }
 
-void MergeSort(int leftMostIdx, int rightMostIdx, int *array, int arrLen)
+void MergeSort(int leftMostIdx, int rightMostIdx, int array[])
 {   
     if(leftMostIdx < rightMostIdx){
 
         int mediumIdx = leftMostIdx + (rightMostIdx-leftMostIdx)/2;
 
-        MergeSort(leftMostIdx, mediumIdx, array, arrLen);
-        MergeSort(mediumIdx + 1, rightMostIdx, array, arrLen);
+        MergeSort(leftMostIdx, mediumIdx, array);
+        MergeSort(mediumIdx + 1, rightMostIdx, array);
         merge(leftMostIdx, mediumIdx, rightMostIdx, array);
     }
 };
