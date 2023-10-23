@@ -15,7 +15,7 @@ int main(){
     while(menu){
 
         printf("\n======================================================");
-        printf("\nWelcome to the Ordering Algorithms Program i326.\n");
+        printf("\nWelcome to the Ordering Algorithms Program.\n");
 
         printf("\nPlease choose one option:\n");
         printf("1. Bubble Sort\n"
